@@ -46,6 +46,7 @@
         font-size: 130%;
         margin-top: 3%;
         padding: 2%;
+        text-shadow: -2px 2px black;
     }
     #join {
         border: white;
@@ -62,5 +63,6 @@
     #title {
         font-size: 180%;
         margin-top: 10%;
+        text-shadow: -2px 2px black;
     }
 }

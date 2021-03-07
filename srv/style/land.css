@@ -42,10 +42,9 @@
         font-size: 120%;
         margin-top: 1%;
         padding: 0.5%;
+        text-shadow: -2px 2px black;
     }
     #join {
-        border: white;
-        border-style: solid;
         margin-top: 2%;
         overflow: hidden;
     }
@@ -60,7 +59,10 @@
         background-color: #a80d0d;
     }
     #title {
+        border: white;
+        border-style: solid;
         font-size: 180%;
         margin-top: 2%;
+        text-shadow: -2px 2px black;
     }
 }
