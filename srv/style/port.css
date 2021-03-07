@@ -10,16 +10,20 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         min-height: 100%;
     }
-    #about, #greeting {
+    img {
+        margin-top: 5%;
+        width: 250px;
+    }
+    #about, #help {
         color: black;
-        font-size: 110%;
+        font-size: 100%;
         font-weight: 600;
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 3%;
         text-align: center;
     }
-    #greeting {
+    #help {
         margin-top: 6%;
     }
     #connecting, #creator, #join, #telegraph, #title {

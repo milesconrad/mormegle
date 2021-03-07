@@ -13,7 +13,11 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         min-height: 100%;
     }
-    #about, #greeting {
+    img {
+        margin-left: 1%;
+        width: 400px;
+    }
+    #about, #help {
         color: black;
         font-size: 120%;
         font-weight: 600;
