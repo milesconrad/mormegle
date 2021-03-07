@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mormegle - Chat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../style/land.css" rel="stylesheet">
+        <link href="../style/port.css" rel="stylesheet">
+        <script src="../lib/socket.io.js"></script>
+        <script src="../lib/player.js"></script>
+    </head>
+    <body>
+
+        <div id="connecting">
+            Connecting...
+        </div>
+
+        <div id="main" hidden>
+            <button id="telegraph">Say hi!</button>
+            <div id="greeting">
+                "Hi" in morse code: .... &nbsp..
+            </div>
+        </div>
+
+        <script src="../lib/client.js"></script>
+    </body>
+</html>

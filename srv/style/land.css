@@ -1,0 +1,62 @@
+@media (orientation: landscape) {
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(187, 187, 187);
+    }
+    body {
+        background-image: linear-gradient(200deg, white, #dd1212);
+    }
+    html {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        min-height: 100%;
+    }
+    #about, #greeting {
+        color: black;
+        font-size: 120%;
+        font-weight: 600;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 2%;
+        text-align: center;
+    }
+    #connecting, #creator, #join, #telegraph, #title {
+        background-color: #e00f0f;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        font-size: 140%;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 7%;
+        width: fit-content;
+        padding: 1%;
+    }
+    #creator {
+        font-size: 120%;
+        margin-top: 1%;
+        padding: 0.5%;
+    }
+    #join {
+        border: white;
+        border-style: solid;
+        margin-top: 2%;
+        overflow: hidden;
+    }
+    #join:hover {
+        background-color: #a80d0d;
+    }
+    #telegraph {
+        border: #00000000;
+        overflow: hidden;
+    }
+    #telegraph:hover {
+        background-color: #a80d0d;
+    }
+    #title {
+        font-size: 180%;
+        margin-top: 2%;
+    }
+}

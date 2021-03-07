@@ -1,0 +1,62 @@
+@media (orientation: portrait) {
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    body {
+        background-image: linear-gradient(200deg, white, #dd1212);
+    }
+    html {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        min-height: 100%;
+    }
+    #about, #greeting {
+        color: black;
+        font-size: 110%;
+        font-weight: 600;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3%;
+        text-align: center;
+    }
+    #greeting {
+        margin-top: 6%;
+    }
+    #connecting, #creator, #join, #telegraph, #title {
+        background-color: #e00f0f;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        font-size: 140%;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 7%;
+        text-align: center;
+        width: fit-content;
+        padding: 3%;
+    }
+    #connecting {
+        margin-top: 30%;
+    }
+    #creator {
+        font-size: 130%;
+        margin-top: 3%;
+        padding: 2%;
+    }
+    #join {
+        border: white;
+        border-style: solid;
+        margin-top: 5%;
+        overflow: hidden;
+    }
+    #telegraph {
+        border: #00000000;
+        margin-top: 30%;
+        overflow: hidden;
+        padding: 5%;
+    }
+    #title {
+        font-size: 180%;
+        margin-top: 10%;
+    }
+}
