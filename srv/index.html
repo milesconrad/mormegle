@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="assets/style/land.css" rel="stylesheet">
         <link href="assets/style/port.css" rel="stylesheet">
+        <script src="assets/lib/player.js"></script>
+        <script src="assets/lib/socket.io.js"></script>
         <link rel="icon" href="assets/favicon.png">
     </head>
     <body>
-        <div id="main">
+        <div id="home">
             <div id="title">
                 Welcome to Mormegle
             </div>
@@ -21,9 +23,15 @@
                 without a chat box! You communicate with strangers using morse code, simply by
                 pressing the button in the middle of the page.
             </div>
-            <div id="chat">
-                <a id="join" href="chat">Get chatting</a>
+            <button id="join">Get chatting</button>
+        </div>
+        <div id="chat" hidden>
+            <button id="telegraph">Connecting...</button>
+            <div id="help" hidden>
+                Don't know morse code? Here's a key:<br>
+                <img src="assets/morse.png">
             </div>
         </div>
+        <script src="assets/lib/client.js"></script>
     </body>
 </html>

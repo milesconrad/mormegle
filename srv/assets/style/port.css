@@ -26,7 +26,7 @@
     #help {
         margin-top: 6%;
     }
-    #connecting, #creator, #join, #telegraph, #title {
+    #creator, #join, #telegraph, #title {
         background-color: #e00f0f;
         border-radius: 5px;
         color: white;
@@ -39,9 +39,6 @@
         width: fit-content;
         padding: 3%;
     }
-    #connecting {
-        margin-top: 30%;
-    }
     #creator {
         font-size: 130%;
         margin-top: 3%;
@@ -49,8 +46,7 @@
         text-shadow: -2px 2px black;
     }
     #join {
-        border: white;
-        border-style: solid;
+        border: none;
         margin-top: 5%;
         overflow: hidden;
     }

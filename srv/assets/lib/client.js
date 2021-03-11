@@ -1,6 +1,6 @@
 const socket = io();
+const join = document.getElementById('join');
 const telegraph = document.getElementById('telegraph');
-const main = document.getElementById('main');
 var audio = new AudioContext();
 var begin;
 var end;
@@ -12,13 +12,19 @@ socket.on('abandoned', function() {
 });
 
 socket.on('partnered', function() {
-    document.getElementById('connecting').remove();
-    main.hidden = false;
+    telegraph.innerHTML = 'Say hi!';
+    document.getElementById('help').hidden = false;
 });
 
 socket.on('send', function(duration) {
     duration = duration / 1000;
     (new SoundPlayer(audio)).play(440.0, 0.3, "sine").stop(duration);
+});
+
+join.addEventListener('click', function() {
+    document.getElementById('home').hidden = true;
+    document.getElementById('chat').hidden = false;
+    socket.emit('join')
 });
 
 telegraph.addEventListener('mousedown', function() {

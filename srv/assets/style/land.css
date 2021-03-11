@@ -26,7 +26,7 @@
         margin-top: 2%;
         text-align: center;
     }
-    #connecting, #creator, #join, #telegraph, #title {
+    #creator, #join, #telegraph, #title {
         background-color: #e00f0f;
         border-radius: 5px;
         color: white;
@@ -45,6 +45,7 @@
         text-shadow: -2px 2px black;
     }
     #join {
+        border: none;
         margin-top: 2%;
         overflow: hidden;
     }
