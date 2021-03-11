@@ -3,7 +3,7 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const winston = require('winston');
-expressWinston = require('express-winston');
+const expressWinston = require('express-winston');
 const queuedUsers = {};
 
 io.on('connection', (socket) => {
