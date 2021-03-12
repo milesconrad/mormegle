@@ -17,6 +17,17 @@
         margin-left: 1%;
         width: 400px;
     }
+    input {
+        background-color: #ff7474;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 100%;
+        padding: 0.8%;
+    }
+    ::placeholder {
+        color: #ffb4b4;
+    }
     #about, #help {
         color: black;
         font-size: 120%;
@@ -46,11 +57,15 @@
     }
     #join {
         border: none;
-        margin-top: 2%;
+        margin-top: 1%;
         overflow: hidden;
     }
     #join:hover {
         background-color: #a80d0d;
+    }
+    #join-div {
+        margin-top: 1%;
+        text-align: center;
     }
     #telegraph {
         border: #00000000;

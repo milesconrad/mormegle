@@ -5,10 +5,11 @@ const io = require('socket.io')(http);
 const winston = require('winston');
 const expressWinston = require('express-winston');
 const queuedUsers = {};
+const interestUsers = {};
 
 io.on('connection', (socket) => {
 
-  socket.on('join', () => {
+  socket.on('join', (interest) => {
     queuedUsers[socket.id] = socket;
     if (Object.keys(queuedUsers).length >= 2) {
       const userids = Object.keys(queuedUsers);

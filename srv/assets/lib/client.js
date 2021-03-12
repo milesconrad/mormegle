@@ -24,7 +24,7 @@ socket.on('send', function(duration) {
 join.addEventListener('click', function() {
     document.getElementById('home').hidden = true;
     document.getElementById('chat').hidden = false;
-    socket.emit('join')
+    socket.emit('join', document.getElementById('interest').value)
 });
 
 telegraph.addEventListener('mousedown', function() {
