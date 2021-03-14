@@ -10,6 +10,7 @@ const interestUsers = {};
 io.on('connection', (socket) => {
 
   socket.on('join', (interest) => {
+    interest = interest.toLowerCase();
     
     if (interest) {
       if (Object.keys(interestUsers).length >= 1 && interestUsers[interest]) {
