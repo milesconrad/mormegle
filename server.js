@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
       user2.partner = user1;
       user1.emit('partnered');
       user2.emit('partnered');
-  };
+    };
   });
 
   socket.on('send', (length) => {
