@@ -13,7 +13,7 @@ io.on('connection', (socket) => {
     interest = interest.toLowerCase();
     
     if (interest) {
-      if (Object.keys(interestUsers).length >= 1 && interestUsers[interest]) {
+      if (Object.keys(interestUsers).length > 0 && interestUsers[interest]) {
         const user1 = interestUsers[interest];
         const user2 = socket;
         delete interestUsers[interest];
@@ -26,15 +26,6 @@ io.on('connection', (socket) => {
       else {
         interestUsers[interest] = socket;
       };
-
-      for (i = 0; i < 50; i++) {
-        if (socket.partner) {
-          return;
-        };
-        setTimeout(200);
-      };
-      delete interestUsers[interest];
-      interest = '';
     };
 
     if (!interest) {
