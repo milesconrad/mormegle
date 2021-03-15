@@ -26,6 +26,18 @@ io.on('connection', (socket) => {
       else {
         interestUsers[interest] = socket;
       };
+
+      for (i = 0; i < 50; i++) {
+        if (socket.partner) {
+          break;
+        };
+        if (i = 49) {
+          delete interestUsers[interest];
+          interest = '';      
+        };
+        setTimeout(200);
+      };
+
     };
 
     if (!interest) {
