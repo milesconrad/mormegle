@@ -29,15 +29,12 @@ io.on('connection', (socket) => {
 
       for (i = 0; i < 50; i++) {
         if (socket.partner) {
-          break;
-        };
-        if (i = 49) {
-          delete interestUsers[interest];
-          interest = '';      
+          return;
         };
         setTimeout(200);
       };
-
+      delete interestUsers[interest];
+      interest = '';
     };
 
     if (!interest) {
