@@ -34,16 +34,18 @@
         font-weight: 600;
         margin-left: 30%;
         margin-right: 30%;
-        margin-top: 2%;
+        margin-top: 1%;
         text-align: center;
     }
     #creator, #join, #telegraph, #title {
         background-color: #e00f0f;
         border-radius: 5px;
-        color: white;
         display: block;
+
+        color: white;
         font-size: 140%;
         font-weight: 700;
+
         margin: auto;
         margin-top: 7%;
         width: fit-content;
@@ -57,7 +59,7 @@
     }
     #join {
         border: none;
-        margin-top: 1%;
+        margin-top: 2%;
         overflow: hidden;
     }
     #join:hover {

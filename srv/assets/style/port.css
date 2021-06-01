@@ -40,10 +40,12 @@
     #creator, #join, #telegraph, #title {
         background-color: #e00f0f;
         border-radius: 5px;
-        color: white;
         display: block;
+        
+        color: white;
         font-size: 140%;
         font-weight: 700;
+        
         margin: auto;
         margin-top: 7%;
         text-align: center;
