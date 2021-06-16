@@ -4,8 +4,8 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const winston = require('winston');
 const expressWinston = require('express-winston');
-const queuedUsers = {};
-const interestUsers = {};
+let queuedUsers = {};
+let interestUsers = {};
 
 io.on('connection', (socket) => {
 
@@ -16,8 +16,8 @@ io.on('connection', (socket) => {
       // if there is another interested user in the waiting room and they share
       // interests, remove them from the waiting room and partner them
       if (Object.keys(interestUsers).length > 0 && interestUsers[interest]) {
-        const user1 = interestUsers[interest];
-        const user2 = socket;
+        let user1 = interestUsers[interest];
+        let user2 = socket;
         delete interestUsers[interest];
 
         user1.partner = user2;
@@ -38,9 +38,9 @@ io.on('connection', (socket) => {
       // if there is another user in the waiting room, remove them from the waiting
       // room and partner them
       if (Object.keys(queuedUsers).length > 0) {
-        const userids = Object.keys(queuedUsers);
-        const user1 = queuedUsers[userids[0]];
-        const user2 = socket;
+        let userids = Object.keys(queuedUsers);
+        let user1 = queuedUsers[userids[0]];
+        let user2 = socket;
         delete queuedUsers[userids[0]];
 
         user1.partner = user2;
