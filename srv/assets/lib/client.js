@@ -1,10 +1,10 @@
 const socket = io();
 const join = document.getElementById('join');
 const telegraph = document.getElementById('telegraph');
-var audio = new AudioContext();
-var begin;
-var end;
-var d;
+const audio = new AudioContext();
+let begin;
+let end;
+let d;
 
 socket.on('abandoned', function() {
     telegraph.style.backgroundColor = '#741818';
