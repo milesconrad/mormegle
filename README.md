@@ -11,7 +11,6 @@ This site is built using node, so to set it up you set up a simple node server. 
 
 in the same directory as the site (assuming you have nodejs and npm installed on your computer).
 
-
 Then run
 
 ```node server.js```
