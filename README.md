@@ -6,9 +6,13 @@ After you visit the page and connect it'll look like this
 ![connected](https://raw.githubusercontent.com/mmiiles/mormegle/main/images/connected.png)
 
 This site is built on node, so to set it up you set up a simple node server. Clone this repo, and then run
+
 ```npm install```
+
 in the same directory as the site (assuming you have nodejs and npm installed on your computer).
 
 Then run
+
 ```node server.js```
+
 and the server will be running on port 8080.
