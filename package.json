@@ -1,7 +1,7 @@
 {
-  "name": "morse-omegle",
+  "name": "mormegle",
   "version": "0.0.1",
-  "description": "chat with random strangers using morse code",
+  "description": "Chat with random strangers using morse code",
   "dependencies": {
     "express": "^4.17.1",
     "express-winston": "^4.1.0",
