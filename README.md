@@ -5,13 +5,11 @@ After you visit the page and connect it'll look like this
 ![main-page](https://raw.githubusercontent.com/milesconrad/mormegle/main/images/mainpage.png)
 ![connected](https://raw.githubusercontent.com/milesconrad/mormegle/main/images/connected.png)
 
-This site is built using node, so to set it up you set up a simple node server. Clone this repo, and then run
+This site is built using node, so to set it up run
 
 ```npm install```
 
-in the same directory as the site (assuming you have nodejs and npm installed on your computer).
-
-Then run
+then run
 
 ```node server.js```
 
